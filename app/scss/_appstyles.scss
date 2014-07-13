@@ -1,1 +1,63 @@
 /* all app scss styles here */
+
+a{color:#204253}
+// a:hover{text-decoration:underline;}
+
+.container{width:960px; margin:0 auto; position: relative;}
+
+.header-logo_index{margin:20px 0;}
+
+.index-headline{
+  color:#5a81b6;
+
+  small{
+    color:#264a79;
+    font-size:0.5em;
+    position: relative;
+    top:-23px;
+    font-style:italic;
+  }
+}
+
+.list_clean,
+.list_clean ul{
+  list-style: none;
+  padding-left:0;
+  margin-left:0;
+}
+
+.list_5col{
+  float: left;
+  width:20%;
+  margin:0;
+  padding:0;
+}
+
+.map-bg{
+  position: absolute;
+  top:-60px;
+  left:100px;
+  z-index:-1;
+}
+
+.states-list ul li{line-height: 2em;}
+.county-list tbody td:last-child{width:120px;}
+
+table th{border-bottom:1px solid #008CBA}
+table .button{ margin: 10px 0;}
+
+.step-number{
+  padding:2px;
+  background-color: #008CBA;
+  color:#fff;
+  border-radius: 50%;
+  width:15px;
+  height:16px;
+  text-align:center;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+// .breadcrumbs .current a{
+//  text-decoration: underline;
+// }
