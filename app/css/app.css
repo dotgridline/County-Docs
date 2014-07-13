@@ -3845,7 +3845,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    font-size: 60%;
+    font-size: 70%;
     color: #6f6f6f;
     line-height: 0; }
 
@@ -3891,7 +3891,7 @@ strong, b {
   line-height: inherit; }
 
 small {
-  font-size: 60%;
+  font-size: 70%;
   line-height: inherit; }
 
 code {
@@ -5244,6 +5244,9 @@ a {
 table th {
   border-bottom: 1px solid #008CBA; }
 
+table tr:hover td {
+  background-color: #cfeff9; }
+
 table .button {
   margin: 10px 0; }
 
@@ -5257,3 +5260,19 @@ table .button {
   text-align: center;
   margin-right: 10px;
   display: inline-block; }
+
+.select_3col div:nth-child(2) {
+  padding: 0 0.9375rem 0 0 !important; }
+
+.select_3col div:nth-child(3) {
+  padding: 0 0.9375rem 0 0.9375rem !important; }
+
+.select_3col div:last-child {
+  padding: 0 0 0 0.9375rem !important; }
+
+.form-note {
+  font-style: italic;
+  position: relative;
+  top: -10px;
+  color: #888;
+  text-align: center; }

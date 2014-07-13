@@ -44,6 +44,7 @@ a{color:#204253}
 .county-list tbody td:last-child{width:120px;}
 
 table th{border-bottom:1px solid #008CBA}
+table tr:hover td{background-color:#cfeff9}
 table .button{ margin: 10px 0;}
 
 .step-number{
@@ -58,6 +59,18 @@ table .button{ margin: 10px 0;}
   display: inline-block;
 }
 
+.select_3col div:nth-child(2){padding: 0 rem-calc(15) 0 0!important;}
+.select_3col div:nth-child(3){padding:0 rem-calc(15) 0 rem-calc(15) !important;}
+.select_3col div:last-child{padding:0 0 0 rem-calc(15) !important;}
+
+.form-note{
+  font-style: italic;
+  position: relative;
+  top:-10px;
+  color:#888;
+  text-align: center;
+
+}
 // .breadcrumbs .current a{
 //  text-decoration: underline;
 // }
