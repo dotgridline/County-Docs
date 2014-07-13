@@ -141,9 +141,9 @@ module.exports = function(grunt) {
 		      port: 21,
 		      authKey: 'key1'
 		    },
-		    src: '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site',
+		    src: '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/dist',
 		    dest: 'public_html/dotgridline/test/county-docs',
-		    exclusions: ['/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/.DS_Store', '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/Thumbs.db', 'dist/tmp'],
+		    exclusions: ['/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/dist/.DS_Store', '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/dist/Thumbs.db', 'dist/tmp'],
 		    simple: true,
 		    useList: false
 		  }
