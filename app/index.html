@@ -13,40 +13,102 @@
     <link rel="stylesheet" href="css/app_override.css">
     <!-- endbuild -->
     <!-- build:js js/vendor/modernizr.min.js -->
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
 
-    <div class="row">
-      <div class="small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel radius">
-        <h1>Yo Foundation 5!</h1>
-        <ul>
-          <li>Sass compiling (Ruby or Node/Libsass)</li>
-          <li>Jade templating engine (option)</li>
-          <li>Publishing to dist directory</li>
-          <li>Server with LiveReload</li>
-          <li>JSHint</li>
-          <li>Grunt Bower install</li>
-          <li>Imagemin</li>
-          <li>Font Awesome (option)</li>
-        </ul>
-        <h1>Grunt tasks:</h1>
-        <ul>
-          <li>'grunt' - watching (Sass, Server on 127.0.0.1:9000 with LiveReload)</li>
-          <li>'grunt compile-sass' - Sass</li>
-          <li>'grunt compile-jade' - Jade</li>
-          <li>'grunt validate-js' - JSHint</li>
-          <li>'grunt bower-install' - injecting bower libraries</li>
-          <li>'grunt publish' - dist directory</li>
-          <li>'grunt server-dist' - server on 127.0.0.1:9001 - dist directory (preview only)</li>
-        </ul>
-        <h2 class="text-right">
-          <a href="https://github.com/juliancwirko/generator-zf5">github</a>
-        </h2>
+    <div class="row container">
+      <div class="small-3 small-centered columns">
+        <img class="header-logo_index" src="images/logo-countyDocs.png" alt="">
       </div>
     </div>
 
+    <div class="row container">
+      <div class="small-12 columns">
+        <h1 class="text-center index-headline">
+          Search for County Criminal Records<br>
+          <small>Select a state below</small>
+        </h1>
+      </div>      
+    </div>
+
+    <div class="row container states-list" style="padding-top:10px;">
+      <img class="map-bg" src="images/us-states-map.png" alt="us-states-map">
+      <div class="small-2 small-offset-1 columns">
+        <ul class="list_clean">
+          <li><a href="county-court-list.html">Alabama</a></li>
+          <li><a href="county-court-list.html">Alaska</a></li>
+          <li><a href="county-court-list.html">Arizona</a></li>
+          <li><a href="county-court-list.html">Arkansas</a></li>
+          <li><a href="county-court-list.html">California</a></li>
+          <li><a href="county-court-list.html">Colorado</a></li>
+          <li><a href="county-court-list.html">Connecticut</a></li>
+          <li><a href="county-court-list.html">Delaware</a></li>
+          <li><a href="county-court-list.html">Florida</a></li>
+          <li><a href="county-court-list.html">Georgia</a></li>
+        </ul>
+      </div>
+        <div class="small-2 columns">
+          <ul class="list_clean">
+            <li><a href="county-court-list.html">Hawaii</a></li>
+            <li><a href="county-court-list.html">Idaho</a></li>
+            <li><a href="county-court-list.html">Illinois</a></li>
+            <li><a href="county-court-list.html">Indiana</a></li>
+            <li><a href="county-court-list.html">Iowa</a></li>
+            <li><a href="county-court-list.html">Kansas</a></li>
+            <li><a href="county-court-list.html">Kentucky</a></li>
+            <li><a href="county-court-list.html">Louisiana</a></li>
+            <li><a href="county-court-list.html">Maine</a></li>
+            <li><a href="county-court-list.html">Maryland</a></li>
+          </ul>
+        </div>
+        <div class="small-2 columns">
+          <ul class="list_clean">
+            <li><a href="county-court-list.html">Massachusetts</a></li>
+            <li><a href="county-court-list.html">Michigan</a></li>
+            <li><a href="county-court-list.html">Minnesota</a></li>
+            <li><a href="county-court-list.html">Mississippi</a></li>
+            <li><a href="county-court-list.html">Missouri</a></li>
+            <li><a href="county-court-list.html">Montana</a></li>
+            <li><a href="county-court-list.html">Nebraska</a></li>
+            <li><a href="county-court-list.html">Nevada</a></li>
+            <li><a href="county-court-list.html">New Hampshire</a></li>
+            <li><a href="county-court-list.html">New Jersey</a></li>
+          </ul>
+        </div>
+        <div class="small-2 columns">
+          <ul class="list_clean">
+            <li><a href="county-court-list.html">New Mexico</a></li>
+            <li><a href="county-court-list.html">New York</a></li>
+            <li><a href="county-court-list.html">North Carolina</a></li>
+            <li><a href="county-court-list.html">North Dakota</a></li>
+            <li><a href="county-court-list.html">Ohio</a></li>
+            <li><a href="county-court-list.html">Oklahoma</a></li>
+            <li><a href="county-court-list.html">Oregon</a></li>
+            <li><a href="county-court-list.html">Pennsylvania</a></li>
+            <li><a href="county-court-list.html">Rhode Island</a></li>
+            <li><a href="county-court-list.html">South Carolina</a></li>
+          </ul>
+        </div>
+        <div class="small-2 columns end">
+          <ul class="list_clean">
+            <li><a href="county-court-list.html">South Dakota</a></li>
+            <li><a href="county-court-list.html">Tennessee</a></li>
+            <li><a href="county-court-list.html">Texas</a></li>
+            <li><a href="county-court-list.html">Utah</a></li>
+            <li><a href="county-court-list.html">Vermont</a></li>
+            <li><a href="county-court-list.html">Virginia</a></li>
+            <li><a href="county-court-list.html">Washington</a></li>
+            <li><a href="county-court-list.html">West Virginia</a></li>
+            <li><a href="county-court-list.html">Wisconsin</a></li>
+            <li><a href="county-court-list.html">Wyoming</a></li>
+         </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
