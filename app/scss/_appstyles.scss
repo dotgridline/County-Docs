@@ -66,11 +66,51 @@ table .button{ margin: 10px 0;}
 .form-note{
   font-style: italic;
   position: relative;
-  top:-10px;
+  top:-30px;
   color:#888;
   text-align: center;
 
 }
-// .breadcrumbs .current a{
-//  text-decoration: underline;
-// }
+.breadcrumbs{
+  margin-top:70px;
+  background:#fff;
+  border:none;
+}
+.breadcrumbs .current a{
+  text-decoration: underline;
+}
+
+.internal-header{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.btn_login,
+.btn_login:active,
+.btn_login:visited,
+.btn_login:link{
+  position: absolute;
+  top: 60px;
+  right:0;
+  background-color: #fff !important;
+  border:1px solid $primary-color;
+  color: $primary-color;
+}
+
+.btn_login:hover{
+ background-color: $primary-color !important;
+ color:#fff; 
+ @include single-transition(background-color);
+}
+
+h1{ color: $primary-color;}
+
+blockquote{
+  border-left:none;
+  margin:0;
+  padding:0;
+}
+
+.bullet-description{margin:5px;display:inline-block;color:#888;}
+
+.pricing-table{border-radius:5px;}
