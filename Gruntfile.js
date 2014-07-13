@@ -132,6 +132,21 @@ module.exports = function(grunt) {
 					'foundation'
 				]
 			}
+		},
+
+		ftpush: {
+		  build: {
+		    auth: {
+		      host: 'ftp.therezabasbaum.com.br',
+		      port: 21,
+		      authKey: 'key1'
+		    },
+		    src: '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site',
+		    dest: 'public_html/dotgridline/test/county-docs',
+		    exclusions: ['/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/.DS_Store', '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/Thumbs.db', 'dist/tmp'],
+		    simple: true,
+		    useList: false
+		  }
 		}
 		
 	});
@@ -151,6 +166,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-wiredep');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-newer');
+	grunt.loadNpmTasks('grunt-ftpush');
 
 	
 	grunt.registerTask('compile-sass', ['sass']);
@@ -159,7 +175,9 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['compile-sass', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
+
+	grunt.registerTask('upload', ['ftpush:build']);
 	
-	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin', 'upload']);
 
 };
