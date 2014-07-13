@@ -19,16 +19,13 @@
   </head>
   <body>
 
-    <div class="row container">
-      <div class="small-3 small-centered columns">
-        <img class="header-logo_index" src="images/logo-countyDocs.png" alt="">
+    <div class="row container internal-header">
+      <div class="small-3 columns">
+        <a href="index.html"><img class="header-logo_index" src="images/logo-countyDocs.png" alt=""></a>
       </div>
-    </div>
-    
-    <div class="row container">
-      <div class="small-12 columns">
-        <ul class="breadcrumbs">
-          <li><!-- <span class="step-number">1</span> --><a href="index.html">Select a State</a></li>
+      <div class="small-9 columns">
+        <ul class="breadcrumbs right">
+          <li><a href="index.html">Select a State</a></li>
           <li class="current"><a href="#">Select a County Court in North Carolina</a></li>
         </ul>
       </div>
@@ -199,18 +196,6 @@
     <!-- endbuild -->
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
-    <script>
-    $(function() {
-      var $sample = $("table tr");
-      if($sample.is(":hover")) {
-        console.log('working');
-         // $sample.children().css("background", "yellow");
-      }
-    
-      else {
-         $sample.css("background", "");
-      }
-      });
-    </script>    
+    <!-- endbuild -->
   </body>
 </html>
