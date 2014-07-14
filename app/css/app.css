@@ -3182,7 +3182,7 @@ ul.pagination {
     list-style: none;
     line-height: 1; }
   .pricing-table .title {
-    background-color: #d1dbbd;
+    background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
     text-align: center;
     color: #C02C2C;
@@ -5201,6 +5201,12 @@ th.hide-for-touch {
 a {
   color: #204253; }
 
+.green {
+  background-color: #27bb51; }
+
+.green:hover {
+  background-color: #2ac957; }
+
 .container {
   width: 960px;
   margin: 0 auto;
@@ -5322,7 +5328,28 @@ blockquote {
   border-radius: 20px;
   border: 1px solid #d1dbbd; }
 
-.form-border {
+/*.form-border{padding:20px; border-radius:20px; border:1px solid $secondary-color;}*/
+.form-border-v1 {
   padding: 20px;
   border-radius: 20px;
+  background-color: #008CBA;
+  color: #fff !important; }
+
+.form-border-v1 label, .form-border-v1 small {
+  color: #fff !important; }
+
+.form-border-v2 {
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #d1dbbd; }
+
+.form-border-v3 {
+  padding: 20px;
+  border-radius: 20px;
+  border: 5px solid #d1dbbd; }
+
+.form-border-v4 {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f3f3f3;
   border: 1px solid #d1dbbd; }
