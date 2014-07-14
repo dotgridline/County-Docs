@@ -3185,7 +3185,7 @@ ul.pagination {
     background-color: #d1dbbd;
     padding: 0.9375rem 1.25rem;
     text-align: center;
-    color: #204253;
+    color: #C02C2C;
     font-weight: normal;
     font-size: 1rem;
     font-family: 'Lora', serif; }
@@ -3195,7 +3195,7 @@ ul.pagination {
     text-align: center;
     color: #333;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-family: 'Lora', serif; }
   .pricing-table .description {
     background-color: #fff;
@@ -5294,11 +5294,11 @@ table .button {
   top: 60px;
   right: 0;
   background-color: #fff !important;
-  border: 1px solid #008CBA;
+  border: 1px solid #d1dbbd;
   color: #008CBA; }
 
 .btn_login:hover {
-  background-color: #008CBA !important;
+  background-color: #d1dbbd !important;
   color: #fff;
   transition: background-color 300ms ease-out; }
 
@@ -5317,3 +5317,12 @@ blockquote {
 
 .pricing-table {
   border-radius: 5px; }
+
+.court-house {
+  border-radius: 20px;
+  border: 1px solid #d1dbbd; }
+
+.form-border {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #d1dbbd; }
