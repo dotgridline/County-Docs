@@ -1,154 +1,319 @@
-/* all app scss styles here */
-$color-tan: #d1dbbd;
-$color-green: #27bb51;
-$color-dark-green: #2ac957;
+/* All app scss styles here */
+
+/*---------------
+  Color Pallette
+-----------------*/
+  $color-green: #27bb51;
+  $color-dark-blue: #264a79; //#27bb51
+  $color-light-green: #2ac957;
+  $color-dark-grey:#b6b6b6;
+  $color-red:#C02C2C;
 
 
-a{color:#204253}
-// a:hover{text-decoration:underline;}
-.green{background-color: $color-green;}
-.green:hover{background-color: $color-dark-green;}
-
-.container{width:960px; margin:0 auto; position: relative;}
-
-.header-logo_index{margin:20px 0;}
-
-.index-headline{
-  color:#5a81b6;
-
-  small{
-    color:#264a79;
-    font-size:0.5em;
+/*----------------
+  General Classes
+------------------*/
+  .container{
+    width:960px; 
+    margin:0 auto; 
     position: relative;
-    top:-23px;
-    font-style:italic;
   }
-}
 
-.list_clean,
-.list_clean ul{
-  list-style: none;
-  padding-left:0;
-  margin-left:0;
-}
+  .radius-border{
+    border-radius: $global-radius;
+    border:1px solid $secondary-color;
+  }
 
-.list_5col{
-  float: left;
-  width:20%;
-  margin:0;
-  padding:0;
-}
+  a:hover{
+    text-decoration:underline;
+  }
 
-.map-bg{
-  position: absolute;
-  top:-60px;
-  left:100px;
-  z-index:-1;
-}
+  .quote{
+    border-left:none;
+    margin:0;
+    padding:0;
+  }
 
-.states-list ul li{line-height: 2em;}
-.county-list tbody td:last-child{width:120px;}
 
-table th{border-bottom:1px solid #008CBA}
-table tr:hover td{background-color:#cfeff9}
-table .button{ margin: 10px 0;}
+  .breadcrumbs{
+    margin-top:70px;
+    background:#fff;
+    border:none;
 
-.step-number{
-  padding:2px;
-  background-color: #008CBA;
-  color:#fff;
-  border-radius: 50%;
-  width:15px;
-  height:16px;
-  text-align:center;
-  margin-right: 10px;
-  display: inline-block;
-}
+    .current a{
+      text-decoration: underline;
+    }
+  }
 
-.select_3col div:nth-child(2){padding: 0 rem-calc(15) 0 0!important;}
-.select_3col div:nth-child(3){padding:0 rem-calc(15) 0 rem-calc(15) !important;}
-.select_3col div:last-child{padding:0 0 0 rem-calc(15) !important;}
+  /* -- Typography --*/
+    h1{
+      color: $primary-color;
+    }
 
-.form-note{
-  font-style: italic;
-  position: relative;
-  top:-30px;
-  color:#888;
-  text-align: center;
+    .text_red{
+      color:#C02C2C;
+    }
 
-}
-.breadcrumbs{
-  margin-top:70px;
-  background:#fff;
-  border:none;
-}
-.breadcrumbs .current a{
-  text-decoration: underline;
-}
+    .text_bold{
+      font-weight: 700;
+    }
 
-.internal-header{
-   margin-top: 20px;
-   margin-bottom: 20px;
-}
+    .heading-highlight{
+      color:$primary-color;
+      text-align: center;
 
-.btn_login,
-.btn_login:active,
-.btn_login:visited,
-.btn_login:link{
-  position: absolute;
-  top: 60px;
-  right:0;
-  background-color: #fff !important;
-  border:1px solid $color-tan;
-  color: $primary-color;
-}
+      small{
+        color:$color-dark-blue;
+        font-size:0.5em;
+        position: relative;
+        top:-23px;
+        font-style:italic;
+      }
+    }
+  
 
-.btn_login:hover{
- background-color: $color-tan !important;
- color:#fff; 
- @include single-transition(background-color);
-}
+  /* -- Buttons -- */
+    a.green, input.green{
+      background-color: $color-green;
 
-h1{ color: $primary-color;}
+      &:hover{
+        background-color: $color-light-green;
+      }
+    }
 
-blockquote{
-  border-left:none;
-  margin:0;
-  padding:0;
-}
+    a.grey, input.grey{
+      background-color: $color-dark-grey;
 
-.bullet-description{margin:5px;display:inline-block;color:#888;}
+      &:hover{
+        background-color: $color-light-green;
+      }
+    }
 
-.pricing-table{border-radius:5px;}
+    a.btn_pdf-download,
+    a.button{
+      text-decoration: none;
+    }
+  
+  
+  /* -- Header -- */  
+    header{
+     margin-top: 20px;
+     margin-bottom: 20px;
 
-.court-house{border-radius:20px;border:1px solid $color-tan;}
+     .logo_pos{
+        margin:20px 0;
+      }
+    
+      .logged-user{
+        margin-top:65px;
+        float: right;
+        font-size:0.9rem;
+        line-height: 1.4em;
+      }
+    }
 
-/*.form-border{padding:20px; border-radius:20px; border:1px solid $secondary-color;}*/
+    .btn_login,
+    .btn_login:active,
+    .btn_login:visited,
+    .btn_login:link{
+      position: absolute;
+      top: 60px;
+      right:0;
+      background-color: #fff !important;
+      border:1px solid $secondary-color;
+      color: $primary-color;
+    }
 
-.form-border-v1{
-  padding:20px;
-  border-radius:20px;
-  background-color: $primary-color;
-  color:#fff !important;
-}
+    .btn_login:hover{
+     background-color: $secondary-color !important;
+     color:#fff; 
+     @include single-transition(background-color);
+    }
 
-.form-border-v1 label, .form-border-v1 small{color:#fff !important;}
 
-.form-border-v2{
-  padding:20px;
-  border-radius:20px;
-  border:2px solid $color-tan;
-}
+  /* -- Tables -- */
+    table{ 
+      th{
+        border-bottom:1px solid #008CBA
+      }
+      
+      tr:hover td{
+        background-color:#cfeff9
+      }
+      
+      .button{
+        margin: 10px 0;
+      }
+    }
 
-.form-border-v3{
-  padding:20px;
-  border-radius:20px;
-  border:5px solid $color-tan;
-}
+  
+  /* -- Pricing Table -- */
+    .pricing-table{
+      border-radius:5px;
+    }
 
-.form-border-v4{
-  padding:20px;
-  border-radius:20px;
-  background-color:#f3f3f3;
-  border:1px solid $color-tan;
-}
+    .bullet-description{
+      margin:5px;
+      display:inline-block;
+      color:#888;
+    }
+
+    .bullet-subitem{
+      margin-bottom:5px;display: inline-block;
+
+      &:last-child{
+        margin-bottom:0
+      }
+    }
+    
+  
+  /* -- Form -- */
+    .form-note{
+      font-style: italic;
+      position: relative;
+      top:-30px;
+      color:#888;
+      text-align: center;
+    }
+
+    .form-border{
+      padding:20px;
+      border-radius:20px;
+      background-color:#f3f3f3;
+      border:1px solid $secondary-color;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"]{
+      margin-right:10px;
+    }
+
+/*------
+  Index
+--------*/
+  .states-list ul li{
+    line-height: 2em;
+
+    a{
+      color:$color-dark-blue;
+      text-decoration: none;
+
+      &:hover{
+        color:$primary-color;
+      }
+    }
+  }
+
+  .map-bg{
+    position: absolute;
+    top:-60px;
+    left:100px;
+    z-index:-1;
+  }
+
+/*----------------
+  County List
+------------------*/
+  .county-list tbody td:last-child{width:120px;}
+
+/*--------------------
+  Order page
+----------------------*/ 
+  .billing-card-info,
+  .credit-card-info{
+    margin-bottom:20px !important;
+    
+    h2{
+      margin:10px 0 20px 0;
+    }
+  }
+
+  .payment-method{
+    div{
+      margin-bottom:20px;
+    }
+
+    img{
+      border:1px solid $secondary-color;
+      border-radius: $global-radius;
+    }
+  }
+
+  .terms-conditions{
+    margin-top:40px;margin-bottom: 40px;
+
+    .terms-conditions-title{
+      margin:0;
+      text-align: center;
+      background-color:#f6f6f6;
+      border:1px solid $secondary-color;
+      border-bottom:none;
+      border-radius:$global-radius $global-radius 0 0;
+      font-size:1.2rem;
+      padding:6px 0;
+    }
+
+    .terms-conditions-content{
+      border:1px solid $secondary-color;
+      border-radius:0 0 0 $global-radius;
+      margin:0;
+      height:255px;
+      padding:10px;
+      overflow: scroll;
+      resize: vertical;
+      margin-bottom: 20px;
+    }
+
+    *{
+      font-size:0.75rem;
+    }
+  }
+
+  #pp-btn{
+    display: none;
+  }
+
+  #office-gallery{
+    margin:20px auto 20px auto;
+  }
+
+/*----------------
+  Members Area
+------------------*/
+  .menu-side{
+    border-right:1px solid $secondary-color;
+    background-color:#f6f6f6;
+    padding:20px 15px;
+    border:1px solid $secondary-color;
+    border-radius:10px;
+  }
+
+  .report-list{
+    border:1px solid $secondary-color;
+    border-radius:10px;
+    padding:0 15px;
+
+    .row{
+      border-top:1px solid $secondary-color;
+      padding-top:15px;
+
+      &:first-child{
+        border:none;
+      }
+
+      &:nth-child(even){
+        background-color: #f6f6f6;
+      }
+    }
+  }
+
+  .btn_pdf-download{
+    background:url(../images/icon_pdf.png) top center no-repeat;
+    position: relative;
+    top:98px;
+    padding-top:80px;
+
+    &:hover{
+      background:url(../images/icon_pdf_blue.png) top center no-repeat;
+    }
+  }
