@@ -19,97 +19,150 @@
   </head>
   <body>
 
-    <div class="row container">
+    
+    <!-- Header -->
+    <header class="row container">
       <div class="small-3 small-centered columns">
-        <a href="index.html"><img class="header-logo_index" src="images/logo-countyDocs.png" alt=""></a>
+        <a href="index.html"><img class="logo_pos" src="images/logo-countyDocs.png" alt=""></a>
       </div>
-      <a href="#" class="button round small btn_login">Client Login</a>
-    </div>
+      <a href="#" data-reveal-id="loginModal" class="button round small btn_login">Client Login</a>
+    </header>
 
+    <!-- Heading -->
     <div class="row container">
       <div class="small-12 columns">
-        <h1 class="text-center index-headline">
+        <h1 class="text-center heading-highlight">
           Search for County Criminal Records<br>
           <small>Select a state below</small>
         </h1>
-      </div>      
+      </div>
     </div>
-
+    
+    <!-- List of States -->
     <div class="row container states-list" style="padding-top:10px;">
       <img class="map-bg" src="images/us-states-map.png" alt="us-states-map">
       <div class="small-2 small-offset-1 columns">
-        <ul class="list_clean">
-          <li><a href="county-court-list.html">Alabama</a></li>
-          <li><a href="county-court-list.html">Alaska</a></li>
-          <li><a href="county-court-list.html">Arizona</a></li>
-          <li><a href="county-court-list.html">Arkansas</a></li>
-          <li><a href="county-court-list.html">California</a></li>
-          <li><a href="county-court-list.html">Colorado</a></li>
-          <li><a href="county-court-list.html">Connecticut</a></li>
-          <li><a href="county-court-list.html">Delaware</a></li>
-          <li><a href="county-court-list.html">Florida</a></li>
-          <li><a href="county-court-list.html">Georgia</a></li>
+        <ul class="no-bullet">
+          <li><a href="court-list.html">Alabama</a></li>
+          <li><a href="court-list.html">Alaska</a></li>
+          <li><a href="court-list.html">Arizona</a></li>
+          <li><a href="court-list.html">Arkansas</a></li>
+          <li><a href="court-list.html">California</a></li>
+          <li><a href="court-list.html">Colorado</a></li>
+          <li><a href="court-list.html">Connecticut</a></li>
+          <li><a href="court-list.html">Delaware</a></li>
+          <li><a href="court-list.html">Florida</a></li>
+          <li><a href="court-list.html">Georgia</a></li>
         </ul>
       </div>
         <div class="small-2 columns">
-          <ul class="list_clean">
-            <li><a href="county-court-list.html">Hawaii</a></li>
-            <li><a href="county-court-list.html">Idaho</a></li>
-            <li><a href="county-court-list.html">Illinois</a></li>
-            <li><a href="county-court-list.html">Indiana</a></li>
-            <li><a href="county-court-list.html">Iowa</a></li>
-            <li><a href="county-court-list.html">Kansas</a></li>
-            <li><a href="county-court-list.html">Kentucky</a></li>
-            <li><a href="county-court-list.html">Louisiana</a></li>
-            <li><a href="county-court-list.html">Maine</a></li>
-            <li><a href="county-court-list.html">Maryland</a></li>
+          <ul class="no-bullet">
+            <li><a href="court-list.html">Hawaii</a></li>
+            <li><a href="court-list.html">Idaho</a></li>
+            <li><a href="court-list.html">Illinois</a></li>
+            <li><a href="court-list.html">Indiana</a></li>
+            <li><a href="court-list.html">Iowa</a></li>
+            <li><a href="court-list.html">Kansas</a></li>
+            <li><a href="court-list.html">Kentucky</a></li>
+            <li><a href="court-list.html">Louisiana</a></li>
+            <li><a href="court-list.html">Maine</a></li>
+            <li><a href="court-list.html">Maryland</a></li>
           </ul>
         </div>
         <div class="small-2 columns">
-          <ul class="list_clean">
-            <li><a href="county-court-list.html">Massachusetts</a></li>
-            <li><a href="county-court-list.html">Michigan</a></li>
-            <li><a href="county-court-list.html">Minnesota</a></li>
-            <li><a href="county-court-list.html">Mississippi</a></li>
-            <li><a href="county-court-list.html">Missouri</a></li>
-            <li><a href="county-court-list.html">Montana</a></li>
-            <li><a href="county-court-list.html">Nebraska</a></li>
-            <li><a href="county-court-list.html">Nevada</a></li>
-            <li><a href="county-court-list.html">New Hampshire</a></li>
-            <li><a href="county-court-list.html">New Jersey</a></li>
+          <ul class="no-bullet">
+            <li><a href="court-list.html">Massachusetts</a></li>
+            <li><a href="court-list.html">Michigan</a></li>
+            <li><a href="court-list.html">Minnesota</a></li>
+            <li><a href="court-list.html">Mississippi</a></li>
+            <li><a href="court-list.html">Missouri</a></li>
+            <li><a href="court-list.html">Montana</a></li>
+            <li><a href="court-list.html">Nebraska</a></li>
+            <li><a href="court-list.html">Nevada</a></li>
+            <li><a href="court-list.html">New Hampshire</a></li>
+            <li><a href="court-list.html">New Jersey</a></li>
           </ul>
         </div>
         <div class="small-2 columns">
-          <ul class="list_clean">
-            <li><a href="county-court-list.html">New Mexico</a></li>
-            <li><a href="county-court-list.html">New York</a></li>
-            <li><a href="county-court-list.html">North Carolina</a></li>
-            <li><a href="county-court-list.html">North Dakota</a></li>
-            <li><a href="county-court-list.html">Ohio</a></li>
-            <li><a href="county-court-list.html">Oklahoma</a></li>
-            <li><a href="county-court-list.html">Oregon</a></li>
-            <li><a href="county-court-list.html">Pennsylvania</a></li>
-            <li><a href="county-court-list.html">Rhode Island</a></li>
-            <li><a href="county-court-list.html">South Carolina</a></li>
+          <ul class="no-bullet">
+            <li><a href="court-list.html">New Mexico</a></li>
+            <li><a href="court-list.html">New York</a></li>
+            <li><a href="court-list.html">North Carolina</a></li>
+            <li><a href="court-list.html">North Dakota</a></li>
+            <li><a href="court-list.html">Ohio</a></li>
+            <li><a href="court-list.html">Oklahoma</a></li>
+            <li><a href="court-list.html">Oregon</a></li>
+            <li><a href="court-list.html">Pennsylvania</a></li>
+            <li><a href="court-list.html">Rhode Island</a></li>
+            <li><a href="court-list.html">South Carolina</a></li>
           </ul>
         </div>
         <div class="small-2 columns end">
-          <ul class="list_clean">
-            <li><a href="county-court-list.html">South Dakota</a></li>
-            <li><a href="county-court-list.html">Tennessee</a></li>
-            <li><a href="county-court-list.html">Texas</a></li>
-            <li><a href="county-court-list.html">Utah</a></li>
-            <li><a href="county-court-list.html">Vermont</a></li>
-            <li><a href="county-court-list.html">Virginia</a></li>
-            <li><a href="county-court-list.html">Washington</a></li>
-            <li><a href="county-court-list.html">West Virginia</a></li>
-            <li><a href="county-court-list.html">Wisconsin</a></li>
-            <li><a href="county-court-list.html">Wyoming</a></li>
+          <ul class="no-bullet">
+            <li><a href="court-list.html">South Dakota</a></li>
+            <li><a href="court-list.html">Tennessee</a></li>
+            <li><a href="court-list.html">Texas</a></li>
+            <li><a href="court-list.html">Utah</a></li>
+            <li><a href="court-list.html">Vermont</a></li>
+            <li><a href="court-list.html">Virginia</a></li>
+            <li><a href="court-list.html">Washington</a></li>
+            <li><a href="court-list.html">West Virginia</a></li>
+            <li><a href="court-list.html">Wisconsin</a></li>
+            <li><a href="court-list.html">Wyoming</a></li>
          </ul>
         </li>
         </ul>
       </div>
     </div>
+    
+    <!-- Modal :: Members Area  -->
+    <div class="row">
+      <div id="loginModal" class="tiny reveal-modal" data-reveal>        
+        <h4 class="text-center heading-highlight">Members Area</h4>
+        <a class="close-reveal-modal">&#215;</a>
+        <form action="" class="small-10 small-centered columns">
+          <div class="row" style="margin-top:30px">
+            <label for="">
+              Email
+              <input type="text">
+            </label>
+            <label for="">
+              Password
+              <input type="text">
+            </label>
+          </div>
+          <div class="row">
+            <a href="#" data-reveal-id="passwordRecoverModal" class="right" style="margin-bottom:20px;">Forgot my Password</a>
+          </div>
+          <div class="row">
+            <input type="submit" name="" class="button green radius expand" value="Log In">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal :: Recover Password  -->
+    <div class="row">
+      <div id="passwordRecoverModal" class="tiny reveal-modal" data-reveal>        
+        <h4 class="text-center heading-highlight">We'll send you<br>a new password</h4>
+        <a class="close-reveal-modal">&#215;</a>
+        <form action="" class="small-10 small-centered columns">
+          <div class="row" style="margin-top:30px">
+            <label for="">
+              Email
+              <input type="text" placeholder="Type the e-mail you have registered">
+            </label>
+          </div>
+          <div class="row">
+            <input type="submit" name="" class="button green small radius expand" value="Log In" style="margin-top:0;">
+          </div>
+          <div class="row text-center">
+            <a href="#" data-reveal-id="loginModal" style="margin-top:20px;"><&nbsp;Back</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
