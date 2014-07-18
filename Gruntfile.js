@@ -28,7 +28,8 @@ module.exports = function(grunt) {
 			},
 			all: [
 				'Gruntfile.js',
-				'<%= app %>/js/**/*.js'
+				'<%= app %>/js/**/*.js',
+				'!<%= app %>/js/owl.carousel.min.js'
 			]
 		},
 
@@ -142,9 +143,9 @@ module.exports = function(grunt) {
 		      authKey: 'key1'
 		    },
 		    src: '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/dist',
-		    dest: 'public_html/dotgridline/test/county-docs',
+		    dest: 'public_html/dotgridline/demo/county-docs',
 		    exclusions: ['/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/dist/.DS_Store', '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/dist/Thumbs.db', 'dist/tmp'],
-		    simple: true,
+		    simple: false,
 		    useList: false
 		  }
 		}
@@ -177,6 +178,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('server-dist', ['connect:dist']);
 
 	grunt.registerTask('upload', ['ftpush:build']);
+
+	grunt.registerTask('compile', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 	
 	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin', 'upload']);
 

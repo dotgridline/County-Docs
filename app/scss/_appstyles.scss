@@ -1,4 +1,5 @@
 /* All app scss styles here */
+/* If you get lost and confused about this, go to http://foundation.zurb.com/docs/ */
 
 /*---------------
   Color Pallette
@@ -34,14 +35,23 @@
     padding:0;
   }
 
+  .divisor-word{
+    color: #666;
+    line-height: 2rem;
+    text-align: center;
+  }
 
   .breadcrumbs{
-    margin-top:70px;
+    margin-top:50px;
     background:#fff;
     border:none;
 
     .current a{
       text-decoration: underline;
+
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 
@@ -51,7 +61,7 @@
     }
 
     .text_red{
-      color:#C02C2C;
+      color:#C02C2C !important;
     }
 
     .text_bold{
@@ -70,6 +80,8 @@
         font-style:italic;
       }
     }
+
+    .heading-spaced{margin-top: 40px;}
   
 
   /* -- Buttons -- */
@@ -97,15 +109,13 @@
   
   /* -- Header -- */  
     header{
-     margin-top: 20px;
-     margin-bottom: 20px;
+     margin-top: 30px !important;
+     margin-bottom: 30px !important;
 
-     .logo_pos{
-        margin:20px 0;
-      }
+
     
       .logged-user{
-        margin-top:65px;
+        margin-top:40px;
         float: right;
         font-size:0.9rem;
         line-height: 1.4em;
@@ -134,15 +144,31 @@
   /* -- Tables -- */
     table{ 
       th{
-        border-bottom:1px solid #008CBA
+        border-bottom:1px solid #008CBA;
+        padding:20px 15px !important;
+      }
+      
+      td{
+        padding:20px 15px !important;
       }
       
       tr:hover td{
-        background-color:#cfeff9
+        background-color:#cfeff9;
+      }      
+    }
+
+    table.with-button{
+      th{
+      padding:20px 15px !important;
       }
-      
+
+      td{
+        padding:0 15px !important;
+        &:last-child{width: 140px;}
+      }
+
       .button{
-        margin: 10px 0;
+        margin:10px 0;
       }
     }
 
@@ -159,7 +185,8 @@
     }
 
     .bullet-subitem{
-      margin-bottom:5px;display: inline-block;
+      display: inline-block;
+      margin-bottom:5px;
 
       &:last-child{
         margin-bottom:0
@@ -189,7 +216,7 @@
     }
 
     form .button{margin-top: 20px;}
-
+    
 /*------
   Index
 --------*/
@@ -213,10 +240,6 @@
     z-index:-1;
   }
 
-/*----------------
-  County List
-------------------*/
-  .county-list tbody td:last-child{width:120px;}
 
 /*--------------------
   Order page
@@ -318,4 +341,9 @@
     &:hover{
       background:url(../images/icon_pdf_blue.png) top center no-repeat;
     }
+  }
+
+  .heading-members-highlight{
+    color:$primary-color;
+    margin-top:30px;
   }

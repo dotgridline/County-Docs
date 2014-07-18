@@ -1,0 +1,335 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>County Docs</title>
+    <!-- build:css css/libraries.min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app_override.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.min.js -->
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="row container">
+      <div class="small-3 columns">
+        <a href="index.html"><img class="logo_pos" src="images/logo-countyDocs.png" alt=""></a>
+      </div>
+      <div class="small-9 columns">
+        <ul class="breadcrumbs right">
+          <li><a href="index.html">Select a State</a></li>
+          <li><a href="#">Select a County Court in [INSERT NAME OF THE STATE]</a></li>
+          <li class="current"><a href="#">Complete Order</a></li>
+        </ul>
+      </div>    
+    </header>
+
+    <div class="row container" style="margin-bottom:20px;">
+      <div class="small-12 columns">
+        <h1>Complete your Order</h1>
+      </div>
+    </div>
+    
+    <!-- Billing Information -->
+    <div class="row container billing-card-info">
+      <div class="small-12 columns">
+        <div class="row">
+            <h2 class="small-12 columns">Personal Information</h2>
+        </div>
+        <div class="row">
+          <form action="">
+            <div class="small-6 columns">              
+              <label>First Name
+                <input type="text" name="personal-info-first-name" tabindex="1">
+              </label>  
+              <label>Email
+                <input type="text" name="personal-info-email" tabindex="3">
+              </label>
+              <label>Billing Address 1
+                <input type="text" name="personal-info-address-1" tabindex="5">
+              </label>
+              <label>City
+                <input type="text" name="personal-info-city" tabindex="7">
+              </label> 
+              <label>Zip Code
+                <input type="text" name="personal-info-zip" tabindex="9">
+              </label>           
+            </div>
+            <div class="small-6 columns">
+              <label>Last Name
+                <input type="text" name="personal-info-last-name" tabindex="2">
+              </label>
+              <label>Email&nbsp;(Confirm)
+                <input type="text" name="personal-info-email" tabindex="4">
+              </label>
+              <label>Billing Address 2
+                <input type="text" name="personal-info-address-2" tabindex="6">
+              </label>
+              <label>State
+                <select name="personal-info-state" class="css-select-moz" tabindex="8">
+                  <option value="" disabled selected>Please Select</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </label>
+              <label>Phone Number
+                <input type="text" name="personal-info-phone" tabindex="10">
+              </label>                
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Credit Card Information -->
+    <div class="row container credit-card-info">
+      <div class="small-12 columns">
+        <div class="row">
+          <h2 class="small-12 columns">Credit Card Information</h2>
+        </div>
+        <div class="row">
+          <form action="">
+            <div class="small-12 columns">
+              <div class="row payment-method">
+                <!-- In-house Credit Card -->
+                <div class="small-2 columns">
+                  <label class="credit-cards">
+                    <input type="radio" name="payment-method" tabindex="11">
+                    <img src="images/icon-mastercard.png" alt="">
+                  </label>
+                </div>
+                <div class="small-2 columns">
+                  <label class="credit-cards">
+                    <input type="radio" name="payment-method" tabindex="12">
+                    <img src="images/icon-visa.png" alt="">
+                  </label>
+                </div>
+                <div class="small-2 columns">
+                  <label class="credit-cards">
+                    <input type="radio" name="payment-method" tabindex="13">
+                    <img src="images/icon-amex.png" alt="">
+                  </label>
+                </div>
+                <div class="small-2 columns">
+                  <label class="credit-cards">
+                    <input type="radio" name="payment-method" tabindex="14">
+                    <img src="images/icon-discover.png" alt="">
+                  </label>
+                </div>
+                <div class="small-2 columns end">
+                  <label class="credit-cards">
+                    <input type="radio" name="payment-method" tabindex="15" id="paypal-payment">
+                    <img src="images/icon-paypal.png" alt="">
+                  </label>
+                </div>                           
+              </div>
+              <!-- Credit Card Form -->
+              <div class="row" id="cc-form">
+                <div class="small-6 columns">
+                  <label>First name on card
+                    <input type="text" name="" placeholder="ex: JOHN" tabindex="16">
+                  </label>
+                  <label>Credit Card Number
+                    <input type="text" name="" placeholder="Only Numbers - Without Space" tabindex="18">
+                  </label>
+                  <label> Expiration Date (Month)</label>
+                    <select name="" id="" tabindex="20">
+                      <option value="" selected disabled>Please Select</option>
+                      <option value="01">(01) Jan</option>
+                      <option value="02">(02) Feb</option>
+                      <option value="03">(03) Mar</option>
+                      <option value="04">(04) Apr</option>
+                      <option value="05">(05) May</option>
+                      <option value="06">(06) Jun</option>
+                      <option value="07">(07) Jul</option>
+                      <option value="08">(08) Aug</option>
+                      <option value="09">(09) Sep</option>
+                      <option value="10">(10) Oct</option>
+                      <option value="11">(11) Nov</option>
+                      <option value="12">(12) Dec</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="small-6 columns">                  
+                  <label>Last Name on card
+                    <input type="text" name="" placeholder="ex: SMITH" tabindex="17">
+                  </label>
+                  <label>CVV&nbsp;(Security Code on Back of Card)
+                    <div class="row">
+                      <div class="small-10 columns">
+                        <input type="text" name="" tabindex="19">
+                      </div>
+                      <div class="small-2 columns">
+                        <img src="images/icon-credit.png" alt="" class="right"style="width:60px">
+                      </div>
+                    </div>
+                  </label>
+                  <label>Expiration Date (Year)
+                    <select name="" id="" tabindex="21">
+                      <option value="" selected disabled>Please Select</option>
+                      <option value="2015">2015</option>
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                    </select>                  
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row container terms-conditions">
+      <div class="small-10 small-centered columns">
+        <div class="row">
+          <div class="small-12 columns">
+            <h4 class="terms-conditions-title">Agreement</h4>
+              <div class="terms-conditions-content">
+                <label for="" tabindex="22">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </label>
+              </div>
+          </div>
+        </div> 
+        <!-- Credit Card Button -->
+        <div class="row">
+          <div class="small-12 columns">
+            <input type="checkbox" name="" value="" tabindex="23">
+            <label>I have read and agree with the <a href="#">Terms and Conditions</a> and the <a href="#">coverage policy</a>.</label>
+          </div>
+        </div>     
+      </div>
+    </div>
+
+    <!-- Credit Card Information -->
+    <div class="row container" id="cc-btn">
+      <div class="small-4  small-centered columns">
+        <input type="submit" value="Complete Order" class="button green radius expand" tabindex="24">
+      </div>
+    </div>
+
+    <!-- Paypal Button -->
+    <div class="row container" id="pp-btn">
+      <div class="small-6  small-centered columns">
+        <input type="submit" value="Complete Order using your Paypal Account" class="button green radius expand" tabindex="24">
+      </div>
+    </div>
+
+
+
+    <!-- TO:DO -->
+    <!-- Retirar form img do css e reduzir imagens para 60px -->
+
+
+
+    <!-- build:js js/vendor/libraries.min.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js js/vendor/foundation.min.js -->
+    <script src="bower_components/foundation/js/foundation/foundation.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.abide.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.accordion.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.alert.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.clearing.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.slider.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.tab.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <!-- endbuild -->
+    <script>
+    $( ".credit-cards").click(function() {
+      if ($('#paypal-payment').prop('checked') == true) {
+       $('#pp-btn').css("display","block");
+       $('#cc-btn').css("display","none");
+       $('#cc-form').css("display","none");
+      }
+      else{
+       $('#pp-btn').css("display","none");
+       $('#cc-btn').css("display","block");
+       $('#cc-form').css("display","block");
+      }
+    });
+    </script>
+  </body>
+</html>

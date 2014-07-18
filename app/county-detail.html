@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation project</title>
+    <title>County Docs</title>
     <!-- build:css css/libraries.min.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -19,44 +19,46 @@
   </head>
   <body>
 
-    <div class="row container" style="margin-top:20px; margin-bottom:20px;">
+    <!-- Header -->
+    <header class="row container">
       <div class="small-3 columns">
-        <a href="index.html"><img class="header-logo_index" src="images/logo-countyDocs.png" alt=""></a>
+        <a href="index.html"><img class="logo_pos" src="images/logo-countyDocs.png" alt=""></a>
       </div>
       <div class="small-9 columns">
         <ul class="breadcrumbs right">
           <li><a href="index.html">Select a State</a></li>
-          <li><a href="county-court-list.html">Select a County Court in North Carolina</a></li>
-          <li class="current"><a href="#">Court Details</a></li>
+          <li class="current"><a href="#">Select a County Court in [INSERT NAME OF THE STATE]</a></li>
         </ul>
+      </div>    
+    </header>
+
+    <!-- Heading -->
+    <div class="row container" style="margin-bottom:20px;">
+      <div class="small-9 columns">
+        <h1>Search Autauga County Alabama Courthouse</h1>
+      </div>
+      <div class="small-3 columns">
+        <img src="images/county-image.png" alt="" class="radius-border">
       </div>
     </div>
 
-    <div class="row container" style="margin-bottom:20px;">
-       <div class="small-9 columns">
-        <h1>Search Mecklenburg North Carolina<br>County Criminal Records</h1>
-      </div>
-      <div class="small-3 columns">
-        <img src="images/county-image.png" class="court-house" alt="">
-      </div>
-     
-      
-    </div>
-    <div class="row container">      
+    <div class="row container" data-equalizer>  
+
+    <!-- Form :: Search Parameters -->    
       <div class="small-5 columns">
-        <form class="form-border-v4">
+        <form class="form-border" action="order.html" data-equalizer-watch>
           <label>First Name
-            <input class="radius" type="text" placeholder="" />
+            <input class="radius" name="search-param-first-name" type="text"/>
           </label>
 
           <label>Last Name
-            <input class="radius" type="text" placeholder="" />
+            <input class="radius" name="search-param-last-name" type="text"/>
           </label>
 
           <label>Date of Birth <small>(optional)*</small></label>
             <ul class="small-block-grid-3">  
               <li>
-                <select name="" id="" class="radius">
+                <select name="search-param-dob-month" class="radius">
                   <option value="" selected disabled>Month</option>
                   <option value="01">(01) Jan</option>
                   <option value="02">(02) Feb</option>
@@ -66,14 +68,14 @@
                   <option value="06">(06) Jun</option>
                   <option value="07">(07) Jul</option>
                   <option value="08">(08) Aug</option>
-                  <option value="09">(09) Sep</option>
+                  <option value="09">(09) Sep/option>
                   <option value="10">(10) Oct</option>
                   <option value="11">(11) Nov</option>
                   <option value="12">(12) Dec</option>
                 </select>
               </li>        
               <li>
-                <select name="" id="" class="radius">
+                <select name="search-param-dob-day" class="radius">
                   <option value="" selected disabled>Day</option>                
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -108,7 +110,7 @@
                 </select>
               </li>
               <li>
-                <select name="" id="" class="radius">
+                <select name="search-param-dob-year" class="radius">
                   <option value="" selected disabled>Year</option>
                   <option value="2014">2014</option>
                   <option value="2014">2014</option>
@@ -119,11 +121,13 @@
               </li>
             </ul>
             <small class="form-note">*It helps us to get a more accurate result for you</small>     
-          <input type="submit" name="" class="button medium radius expand green" style="margin: 0;" value="Proceed to Payment">
+          <input type="submit" data-reveal-id="loginModal-order" name="" class="button medium radius expand green" style="margin: 0;" value="Next">
         </form>
       </div>
-      <div class="small-2 columns">
-        <ul class="pricing-table">
+
+      <!-- Pricing Table -->
+      <div class="small-3 columns">
+        <ul class="pricing-table"  data-equalizer-watch>
           <li class="title">Pricing</li>
           <li class="bullet-item">
             County Fees<br>
@@ -133,22 +137,22 @@
             Convenience Fees<br>
             <span class="bullet-description">$9.95</span>
           </li>
+          <li class="bullet-item">
+            <span class="bullet-subitem">Arrest Search</span><br>
+            <span class="bullet-subitem">Warrant Search</span><br>
+            <span class="bullet-subitem">National Criminal<br>Database Search</span><br>
+            <span class="bullet-description text_red text_bold">FREE</span><br>
+          </li>
           <li class="price">$19.95</li>
         </ul>
       </div>
-      <div class="small-5 columns">
-        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+
+      <!-- Sales Message -->
+      <div class="small-4 columns">
+        <blockquote class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
       </div>
-      
-      <!-- <ul class="no-bullet small-3 columns">
-        <li>County Fee</li>
-        <li>$10.00</li>
-        <li>+</li>
-        <li>Convenience Fee</li>
-        <li>$9.95</li>
-        <li>=$19.95</li>
-      </ul> -->
     </div>
+
 
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
