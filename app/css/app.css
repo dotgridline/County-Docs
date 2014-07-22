@@ -5236,6 +5236,9 @@ a:hover {
     .breadcrumbs .current a:hover {
       text-decoration: underline; }
 
+.no-margin {
+  margin: 0 !important; }
+
 /* -- Typography --*/
 h1 {
   color: #008CBA; }
@@ -5419,6 +5422,12 @@ form .button {
   padding: 20px 15px;
   border: 1px solid #d1dbbd;
   border-radius: 10px; }
+  .menu-side a li.selected {
+    text-decoration: underline !important;
+    color: #264a79; }
+  .menu-side a:hover {
+    color: #264a79 !important;
+    text-decoration: none !important; }
 
 .report-list {
   border: 1px solid #d1dbbd;

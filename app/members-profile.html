@@ -51,9 +51,9 @@
         <div class="row">          
           <nav class="small-12 columns">
             <ul class="no-bullet text-center">
-             <a href="#"><li>My Orders</li></a>
+             <a href="members-orders.html"><li>My Orders</li></a>
              <a href="#"><li>Accounting</li></a>
-             <a href="#"><li>Edit Profile</li></a>
+             <a href="#"><li class="selected">Edit Profile</li></a>
              <a href="#"><li>Logout</li></a>
             </ul>
           </nav>
@@ -71,8 +71,8 @@
               <label for="">
                 Search Orders
                 <input type="text">
-                <input type="submit" value="Search" class="button grey radius small expand">
               </label>
+                <input type="submit" value="Search" class="button grey radius small expand no-margin">
             </form>
           </div>
         </div>
@@ -80,71 +80,39 @@
       </section>
       
       <!-- :: Report Section :: -->    
-      <div class="small-9 small-offset-1 columns">
+      <div class="small-5 small-offset-1 columns end">
         
-        <!-- Report List -->  
-        <div class="row report-list">        
-          <div class="row">
-            <div class="small-10 columns">
-              <ul class="small-block-grid-3 no-bullets">
-                <li><span class="text_bold">First Name</span><br>WILFRED</li>
-                <li><span class="text_bold">Last Name</span><br>TULANE</li>
-                <li><span class="text_bold">Date of Birth</span><br>07/29/1984</li>
-                <li><span class="text_bold">Date of Search</span><br>03/07/14</li>
-                <li><span class="text_bold">State</span><br>MA</li>
-                <li><span class="text_bold">County</span><br>HAMPDEN</li>
-              </ul>
-            </div>
-            <div class="small-2 columns text-center">
-              <a href="#" class="btn_pdf-download">Download</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="small-10 columns">
-              <ul class="small-block-grid-3 no-bullets">
-                <li><span class="text_bold">First Name</span><br>WILFRED</li>
-                <li><span class="text_bold">Last Name</span><br>TULANE</li>
-                <li><span class="text_bold">Date of Birth</span><br>07/29/1984</li>
-                <li><span class="text_bold">Date of Search</span><br>03/07/14</li>
-                <li><span class="text_bold">State</span><br>MA</li>
-                <li><span class="text_bold">County</span><br>HAMPDEN</li>
-              </ul>
-            </div>
-            <div class="small-2 columns text-center">
-              <a href="#" class="btn_pdf-download">Download</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="small-10 columns">
-              <ul class="small-block-grid-3 no-bullets">
-                <li><span class="text_bold">First Name</span><br>WILFRED</li>
-                <li><span class="text_bold">Last Name</span><br>TULANE</li>
-                <li><span class="text_bold">Date of Birth</span><br>07/29/1984</li>
-                <li><span class="text_bold">Date of Search</span><br>03/07/14</li>
-                <li><span class="text_bold">State</span><br>MA</li>
-                <li><span class="text_bold">County</span><br>HAMPDEN</li>
-              </ul>
-            </div>
-            <div class="small-2 columns text-center">
-              <a href="#" class="btn_pdf-download">Download</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="small-10 columns">
-              <ul class="small-block-grid-3 no-bullets">
-                <li><span class="text_bold">First Name</span><br>WILFRED</li>
-                <li><span class="text_bold">Last Name</span><br>TULANE</li>
-                <li><span class="text_bold">Date of Birth</span><br>07/29/1984</li>
-                <li><span class="text_bold">Date of Search</span><br>03/07/14</li>
-                <li><span class="text_bold">State</span><br>MA</li>
-                <li><span class="text_bold">County</span><br>HAMPDEN</li>
-              </ul>
-            </div>
-            <div class="small-2 columns text-center">
-              <a href="#" class="btn_pdf-download">Download</a>
-            </div>
-          </div>
+        <!-- Heading -->  
+        <div class="row">        
+          <h1>Edit your profile</h1>
         </div>
+        <div class="row">        
+          <form action="" data-abide>
+            <label for="">
+              First Name
+              <input type="text" name="edit-first-name" placeholder="Change to Current First Name">
+            </label>
+            <label for="">
+              Last Name
+              <input type="text" name="edit-last-name" placeholder="Change to Current Last Name">
+            </label>
+            <label for="">
+              E-mail
+              <input type="email" name="edit-email" placeholder="Change to Current email">
+            </label>
+            <label for="">
+              Password
+              <input type="password" name="edit-password" value="" id="password" placeholder="Change to Current Password">
+            </label>
+            <label for="">
+              Password (confirmation)
+              <input type="password" name="edit-password" value="" placeholder="Change to Current Password" data-equalto="password">
+              <small class="error">The password did not match</small>
+            </label>
+            <input type="button" name="" class="button green radius" value="Save changes">
+          </form>
+        </div>
+
       </div>
 
 

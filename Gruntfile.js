@@ -179,7 +179,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('upload', ['ftpush:build']);
 
-	grunt.registerTask('compile', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('compile', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', '<newer:></newer:>imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 	
 	grunt.registerTask('publish', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin', 'upload']);
 
