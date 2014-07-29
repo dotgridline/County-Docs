@@ -355,3 +355,24 @@
     color:$primary-color;
     margin-top:30px;
   }
+
+  .pricing-table-2col{
+    font-size:0.9em;
+    margin-left:0;
+    text-align: left;
+
+    li{
+      display: inline-block;
+
+      &:first-child{
+        width:125px;
+        vertical-align: middle;
+      }
+
+      .bullet-description{
+        width:100px;
+        float: right;
+        vertical-align: middle;
+      }
+    }      
+  }
