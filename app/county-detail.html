@@ -18,141 +18,219 @@
     <!-- endbuild -->
   </head>
   <body>
+    <div class="page-wrap"> 
 
-    <!-- Header -->
-    <header class="row container">
-      <div class="small-3 columns">
-        <a href="index.html"><img class="logo_pos" src="images/logo.png" alt=""></a>
-      </div>
-      <div class="small-9 columns">
-        <ul class="breadcrumbs right">
-          <li><a href="index.html">Select a State</a></li>
-          <li class="current"><a href="#">Select a County Court in [INSERT NAME OF THE STATE]</a></li>
-        </ul>
-      </div>    
-    </header>
+      <!-- Header -->
+      <header class="row container">
+        <div class="small-8 small-offset-2 columns text-center">
+          <a href="index.html"><img class="logo_pos" src="images/logo.png" alt=""></a>
+        </div>
+        <div class="small-2 columns">
+          <a href="#" data-reveal-id="loginModal" class="button round small expand btn_login">Client Login</a>
+        </div>
+      </header>
+        
+      <!-- Content -->
+      <div class="row container content">      
+        <!-- Breadcrumb -->
+        <div class="row">
+          <ul class="breadcrumbs left">
+            <li><a href="index.html">Select a State</a></li>
+            <li><a href="court-list.html">Select a County Court</a></li>
+            <li class="current"><a href="#">[NAME OF COUNTY COURT]</a></li>
+          </ul>
+        </div>
 
-    <!-- Heading -->
-    <div class="row container" style="margin-bottom:20px;">
-      <div class="small-9 columns">
-        <h1>Search Autauga County Alabama Courthouse</h1>
-      </div>
-      <div class="small-3 columns">
-        <img src="images/county-image.png" alt="" class="radius-border">
-      </div>
-    </div>
+        <!-- Heading -->
+        <div class="row container" style="margin-bottom:20px;">
+          <div class="small-9 columns">
+            <h1>Search Autauga County Alabama Courthouse</h1>
+          </div>
+          <div class="small-3 columns">
+            <img src="images/county-image.png" alt="" class="radius-border">
+          </div>
+        </div>
 
-    <div class="row container" data-equalizer>  
+        <div class="row container" data-equalizer>  
 
-    <!-- Form :: Search Parameters -->    
-      <div class="small-5 columns">
-        <form class="form-border" action="order.html" data-equalizer-watch>
-          <label>First Name
-            <input class="radius" name="search-param-first-name" type="text"/>
-          </label>
+        <!-- Form :: Search Parameters -->    
+          <div class="small-5 columns">
+            <form class="form-border" action="order.html" data-abide data-equalizer-watch>
+              <div>
+                <label>First Name
+                  <input class="radius" name="search-param-first-name" type="text" required pattern="alpha"/>
+                </label>
+                <small class="error">Name isn't valid. Please, try again.</small>
+              </div>
 
-          <label>Last Name
-            <input class="radius" name="search-param-last-name" type="text"/>
-          </label>
+              <div>
+                <label>Last Name
+                  <input class="radius" name="search-param-last-name" type="text" required pattern="alpha"/>
+                </label>
+                <small class="error">Name isn't valid. Please, try again.</small>
+              </div>
 
-          <label>Date of Birth <small>(optional)*</small></label>
-            <ul class="small-block-grid-3">  
-              <li>
-                <select name="search-param-dob-month" class="radius">
-                  <option value="" selected disabled>Month</option>
-                  <option value="01">(01) Jan</option>
-                  <option value="02">(02) Feb</option>
-                  <option value="03">(03) Mar</option>
-                  <option value="04">(04) Apr</option>
-                  <option value="05">(05) May</option>
-                  <option value="06">(06) Jun</option>
-                  <option value="07">(07) Jul</option>
-                  <option value="08">(08) Aug</option>
-                  <option value="09">(09) Sep/option>
-                  <option value="10">(10) Oct</option>
-                  <option value="11">(11) Nov</option>
-                  <option value="12">(12) Dec</option>
-                </select>
+              <label>Date of Birth</label>
+                <ul class="small-block-grid-3">  
+                  <li>
+                    <select name="search-param-dob-month" class="radius" required>
+                      <option value="" selected disabled>Month</option>
+                      <option value="01">(01) Jan</option>
+                      <option value="02">(02) Feb</option>
+                      <option value="03">(03) Mar</option>
+                      <option value="04">(04) Apr</option>
+                      <option value="05">(05) May</option>
+                      <option value="06">(06) Jun</option>
+                      <option value="07">(07) Jul</option>
+                      <option value="08">(08) Aug</option>
+                      <option value="09">(09) Sep/option>
+                      <option value="10">(10) Oct</option>
+                      <option value="11">(11) Nov</option>
+                      <option value="12">(12) Dec</option>
+                    </select>
+                    <small class="error">Please, select one.</small>
+                  </li>        
+                  <li>
+                    <select name="search-param-dob-day" class="radius" required>
+                      <option value="" selected disabled>Day</option>                
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                    </select>
+                    <small class="error">Please, select one.</small>
+                  </li>
+                  <li>
+                    <select name="search-param-dob-year" class="radius" required>
+                      <option value="" selected disabled>Year</option>
+                      <option value="2014">2014</option>
+                      <option value="2014">2014</option>
+                      <option value="2014">2014</option>
+                      <option value="2014">2014</option>
+                      <option value="2014">2014</option>
+                    </select>
+                    <small class="error">Please, select one.</small>
+                  </li>
+                </ul>
+              <input type="submit" data-reveal-id="loginModal-order" name="" class="button medium radius expand green" style="margin: 0;" value="Next">
+            </form>
+          </div>
+
+          <!-- Pricing Table -->
+          <div class="small-3 columns">
+            <ul class="pricing-table"  data-equalizer-watch>
+              <li class="title">Pricing</li>
+              <li class="bullet-item">
+                County Fees<br>
+                <span class="bullet-description">$10.00</span>
               </li>        
-              <li>
-                <select name="search-param-dob-day" class="radius">
-                  <option value="" selected disabled>Day</option>                
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                  <option value="13">13</option>
-                  <option value="14">14</option>
-                  <option value="15">15</option>
-                  <option value="16">16</option>
-                  <option value="17">17</option>
-                  <option value="18">18</option>
-                  <option value="19">19</option>
-                  <option value="20">20</option>
-                  <option value="21">21</option>
-                  <option value="22">22</option>
-                  <option value="23">23</option>
-                  <option value="24">24</option>
-                  <option value="25">25</option>
-                  <option value="26">26</option>
-                  <option value="27">27</option>
-                  <option value="28">28</option>
-                  <option value="29">29</option>
-                  <option value="30">30</option>
-                </select>
+              <li class="bullet-item">
+                Convenience Fees<br>
+                <span class="bullet-description">$9.95</span>
               </li>
-              <li>
-                <select name="search-param-dob-year" class="radius">
-                  <option value="" selected disabled>Year</option>
-                  <option value="2014">2014</option>
-                  <option value="2014">2014</option>
-                  <option value="2014">2014</option>
-                  <option value="2014">2014</option>
-                  <option value="2014">2014</option>
-                </select>
+              <li class="bullet-item">
+                <span class="bullet-subitem">Arrest Search</span><br>
+                <span class="bullet-subitem">Warrant Search</span><br>
+                <span class="bullet-subitem">National Criminal<br>Database Search</span><br>
+                <span class="bullet-description text_red text_bold">FREE</span><br>
               </li>
+              <li class="price">$19.95</li>
             </ul>
-            <small class="form-note">*It helps us to get a more accurate result for you</small>     
-          <input type="submit" data-reveal-id="loginModal-order" name="" class="button medium radius expand green" style="margin: 0;" value="Next">
-        </form>
+          </div>
+
+          <!-- Sales Message -->
+          <div class="small-4 columns">
+            <blockquote class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+          </div>
+        </div>
+
+        <!-- Modal :: Members Area  -->
+        <div class="row">
+          <div id="loginModal" class="tiny reveal-modal" data-reveal>        
+            <h4 class="text-center heading-highlight">Members Area</h4>
+            <a class="close-reveal-modal">&#215;</a>
+            <form action="" class="small-10 small-centered columns">
+              <div class="row" style="margin-top:30px">
+                <label for="">
+                  Email
+                  <input type="text">
+                </label>
+                <label for="">
+                  Password
+                  <input type="text">
+                </label>
+              </div>
+              <div class="row">
+                <a href="#" data-reveal-id="passwordRecoverModal" class="right" style="margin-bottom:20px;">Forgot my Password</a>
+              </div>
+              <div class="row">
+                <input type="submit" name="" class="button green radius expand" value="Log In">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Modal :: Recover Password  -->
+        <div class="row">
+          <div id="passwordRecoverModal" class="tiny reveal-modal" data-reveal>        
+            <h4 class="text-center heading-highlight">We'll send you<br>a new password</h4>
+            <a class="close-reveal-modal">&#215;</a>
+            <form action="" class="small-10 small-centered columns">
+              <div class="row" style="margin-top:30px">
+                <label for="">
+                  Email
+                  <input type="text" placeholder="Type the e-mail you have registered">
+                </label>
+              </div>
+              <div class="row">
+                <input type="submit" name="" class="button green small radius expand" value="Log In" style="margin-top:0;">
+              </div>
+              <div class="row text-center">
+                <a href="#" data-reveal-id="loginModal" style="margin-top:20px;"><&nbsp;Back</a>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
 
-      <!-- Pricing Table -->
-      <div class="small-3 columns">
-        <ul class="pricing-table"  data-equalizer-watch>
-          <li class="title">Pricing</li>
-          <li class="bullet-item">
-            County Fees<br>
-            <span class="bullet-description">$10.00</span>
-          </li>        
-          <li class="bullet-item">
-            Convenience Fees<br>
-            <span class="bullet-description">$9.95</span>
-          </li>
-          <li class="bullet-item">
-            <span class="bullet-subitem">Arrest Search</span><br>
-            <span class="bullet-subitem">Warrant Search</span><br>
-            <span class="bullet-subitem">National Criminal<br>Database Search</span><br>
-            <span class="bullet-description text_red text_bold">FREE</span><br>
-          </li>
-          <li class="price">$19.95</li>
-        </ul>
-      </div>
-
-      <!-- Sales Message -->
-      <div class="small-4 columns">
-        <blockquote class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
-      </div>
+      <!-- Footer -->
+      <footer class="second-nav">
+        <div class="row container">
+          <ul class="inline-list h-aligned">
+            <li><a href="#">National Database Coverage</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>            
+          </ul>
+        </div>
+      </footer>
     </div>
-
 
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->

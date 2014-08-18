@@ -5205,6 +5205,23 @@ th.hide-for-touch {
 /*----------------
   General Classes
 ------------------*/
+body {
+  height: auto; }
+
+.page-wrap {
+  min-height: 100%;
+  position: relative; }
+
+.content {
+  padding-bottom: 30px; }
+
+.container {
+  width: 1024px;
+  position: relative; }
+
+input, select {
+  border-radius: 5px; }
+
 .container {
   width: 960px;
   margin: 0 auto;
@@ -5228,7 +5245,6 @@ a:hover {
   text-align: center; }
 
 .breadcrumbs {
-  margin-top: 50px;
   background: #fff;
   border: none; }
   .breadcrumbs .current a {
@@ -5238,6 +5254,9 @@ a:hover {
 
 .no-margin {
   margin: 0 !important; }
+
+.h-aligned {
+  margin: 0 auto !important; }
 
 /* -- Typography --*/
 h1 {
@@ -5287,9 +5306,7 @@ header {
     line-height: 1.4em; }
 
 .btn_login, .btn_login:active, .btn_login:visited, .btn_login:link {
-  position: absolute;
-  top: 60px;
-  right: 0;
+  margin-top: 40px;
   background-color: #fff !important;
   border: 1px solid #d1dbbd;
   color: #008CBA; }
@@ -5298,6 +5315,23 @@ header {
   background-color: #d1dbbd !important;
   color: #008CBA;
   transition: all 300ms ease-out; }
+
+/* -- Footer -- */
+.second-nav {
+  background-color: #EEE;
+  padding: 10px 0;
+  margin-bottom: 0; }
+  .second-nav ul {
+    width: 680px; }
+    .second-nav ul a {
+      color: #666; }
+      .second-nav ul a:hover {
+        color: #444;
+        text-decoration: none; }
+    .second-nav ul li {
+      padding-left: 30px; }
+      .second-nav ul li:first-child {
+        padding-left: 0; }
 
 /* -- Tables -- */
 table th {
@@ -5452,3 +5486,25 @@ form .button {
 .heading-members-highlight {
   color: #008CBA;
   margin-top: 30px; }
+
+.pricing-table-2col {
+  font-size: 0.9em;
+  margin-left: 0;
+  text-align: left; }
+  .pricing-table-2col li {
+    display: inline-block; }
+    .pricing-table-2col li:first-child {
+      width: 125px;
+      vertical-align: middle; }
+    .pricing-table-2col li .bullet-description {
+      width: 100px;
+      float: right;
+      vertical-align: middle; }
+
+/*-- Members :: New search --*/
+#new-search-county-choice {
+  display: none;
+  margin: 50px auto; }
+
+.list-fees-math-signal {
+  padding-top: 10px; }

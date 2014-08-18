@@ -18,105 +18,114 @@
     <!-- endbuild -->
   </head>
   <body>
-    
-    <!-- Header :: Logo and Client Login -->
-    <header class="row container">
-      <div class="small-3 columns">
-        <a href="index.html">
-          <img class="logo_pos" src="images/logo.png" alt="">
-        </a>
-      </div>
-      <div class="small-6 columns text-center">
-        <h4 class="heading-members-highlight">County Docs<br>Customer Account Interface</h4>
-      </div>
-      <div class="small-3 columns logged-user text-right" >
-        user@email.com<br>
-        <a href="#">sign out</a>
-      </div>
-    </header>
+    <div class="page-wrap">
+      <!-- Header :: Logo and Client Login -->
+      <header class="row container">
+        <div class="small-3 columns">
+          <a href="index.html">
+            <img class="logo_pos" src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="small-6 columns text-center">
+          <h4 class="heading-members-highlight">County Docs<br>Customer Account Interface</h4>
+        </div>
+        <div class="small-3 columns logged-user text-right" >
+          user@email.com<br>
+          <a href="#">sign out</a>
+        </div>
+      </header>
 
-    <!-- :: General Information :: -->
-    <div class="row container " style="margin-top:0px;">
-      <!-- :: Menu :: Side Menu - Members Area -->    
-      <section class="small-2 columns menu-side">
-    
-        <!-- Button :: New Search -->
-        <div class="row">
-          <div class="small-12 columns">
-            <a href="#" class="button green radius small expand">New Search</a>
+      <div class="row container content">
+        <!-- :: Menu :: Side Menu - Members Area -->    
+        <div class="small-2 columns menu-side">
+      
+          <!-- Button :: New Search -->
+          <div class="row">
+            <div class="small-12 columns">
+              <a href="members-new-search.html" class="button green radius small expand">New Search</a>
+            </div>
           </div>
-        </div>
 
-        <!-- Navigation :: Link List -->
-        <div class="row">          
-          <nav class="small-12 columns">
-            <ul class="no-bullet text-center">
-             <a href="members-orders.html"><li>My Orders</li></a>
-             <a href="#"><li>Accounting</li></a>
-             <a href="#"><li class="selected">Edit Profile</li></a>
-             <a href="#"><li>Logout</li></a>
-            </ul>
-          </nav>
-        </div>
+          <!-- Navigation :: Link List -->
+          <div class="row">          
+            <nav class="small-12 columns">
+              <ul class="no-bullet text-center">
+               <a href="members-orders.html"><li>My Orders</li></a>
+               <a href="#"><li>Accounting</li></a>
+               <a href="#"><li class="selected">Edit Profile</li></a>
+              </ul>
+            </nav>
+          </div>
 
-        <!-- Divisor -->
-        <div class="row">          
-          <hr class="menu-side-divisor small-4 small-centered columns">
-        </div>
+          <!-- Divisor -->
+          <div class="row">          
+            <hr class="menu-side-divisor small-4 small-centered columns">
+          </div>
 
-        <!-- Form :: Search -->
-        <div class="row">
-          <div class="small-12 columns">
-            <form action="">
+          <!-- Form :: Search -->
+          <div class="row">
+            <div class="small-12 columns">
+              <form action="">
+                <label for="">
+                  Search Orders
+                  <input type="text">
+                </label>
+                  <input type="submit" value="Search" class="button grey radius small expand no-margin">
+              </form>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- :: Report Section :: -->    
+        <div class="small-5 small-offset-1 columns end">
+          
+          <!-- Heading -->  
+          <div class="row">        
+            <h1>Edit your profile</h1>
+          </div>
+          <div class="row">        
+            <form action="" data-abide>
               <label for="">
-                Search Orders
-                <input type="text">
+                First Name
+                <input type="text" name="edit-first-name" placeholder="Change to Current First Name">
               </label>
-                <input type="submit" value="Search" class="button grey radius small expand no-margin">
+              <label for="">
+                Last Name
+                <input type="text" name="edit-last-name" placeholder="Change to Current Last Name">
+              </label>
+              <label for="">
+                E-mail
+                <input type="email" name="edit-email" placeholder="Change to Current email">
+              </label>
+              <label for="">
+                Password
+                <input type="password" name="edit-password" value="" id="password" placeholder="Change to Current Password">
+              </label>
+              <label for="">
+                Password (confirmation)
+                <input type="password" name="edit-password" value="" placeholder="Change to Current Password" data-equalto="password">
+                <small class="error">The password did not match</small>
+              </label>
+              <input type="button" name="" class="button green radius" value="Save changes">
             </form>
           </div>
         </div>
-        
-      </section>
-      
-      <!-- :: Report Section :: -->    
-      <div class="small-5 small-offset-1 columns end">
-        
-        <!-- Heading -->  
-        <div class="row">        
-          <h1>Edit your profile</h1>
-        </div>
-        <div class="row">        
-          <form action="" data-abide>
-            <label for="">
-              First Name
-              <input type="text" name="edit-first-name" placeholder="Change to Current First Name">
-            </label>
-            <label for="">
-              Last Name
-              <input type="text" name="edit-last-name" placeholder="Change to Current Last Name">
-            </label>
-            <label for="">
-              E-mail
-              <input type="email" name="edit-email" placeholder="Change to Current email">
-            </label>
-            <label for="">
-              Password
-              <input type="password" name="edit-password" value="" id="password" placeholder="Change to Current Password">
-            </label>
-            <label for="">
-              Password (confirmation)
-              <input type="password" name="edit-password" value="" placeholder="Change to Current Password" data-equalto="password">
-              <small class="error">The password did not match</small>
-            </label>
-            <input type="button" name="" class="button green radius" value="Save changes">
-          </form>
-        </div>
-
       </div>
 
-
+      <!-- Footer -->
+      <footer class="second-nav">
+        <div class="row container">
+          <ul class="inline-list h-aligned">
+            <li><a href="#">National Database Coverage</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>            
+          </ul>
+        </div>
+      </footer>
     </div>
+
+    
 
     <link rel="stylesheet" href="css/owl-carousel.css">
     <!-- build:js js/vendor/libraries.min.js -->

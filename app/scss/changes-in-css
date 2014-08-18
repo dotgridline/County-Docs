@@ -1,0 +1,20 @@
+.pricing-table-2col{
+  font-size:0.9em;
+  margin-left:0;
+  text-align: left;
+}
+
+.pricing-table-2col li{
+  display: inline-block
+}
+
+.pricing-table-2col li:first-child{
+  width:125px;
+  vertical-align: middle;
+}
+
+.pricing-table-2col .bullet-description{
+  width:100px;
+  float: right;
+  vertical-align: middle;
+}

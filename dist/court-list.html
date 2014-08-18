@@ -9,159 +9,228 @@
     <script src="js/vendor/modernizr.min.js"></script>
   </head>
   <body>
+    <div class="page-wrap"> 
 
-    <!-- Header -->
-    <header class="row container">
-      <div class="small-3 columns">
-        <a href="index.html"><img class="logo_pos" src="images/logo-countyDocs.png" alt=""></a>
-      </div>
-      <div class="small-9 columns">
-        <ul class="breadcrumbs right">
-          <li><a href="index.html">Select a State</a></li>
-          <li class="current"><a href="#">Select a County Court in [NAME OF THE STATE]</a></li>
-        </ul>
-      </div>    
-    </header>
+      <!-- Header -->
+      <header class="row container">
+        <div class="small-8 small-offset-2 columns text-center">
+          <a href="index.html"><img class="logo_pos" src="images/logo.png" alt=""></a>
+        </div>
+        <div class="small-2 columns">
+          <a href="#" data-reveal-id="loginModal" class="button round small expand btn_login">Client Login</a>
+        </div>
+      </header>
+        
+      <!-- Content -->
+      <div class="row container content">      
+        <!-- Breadcrumb -->
+        <div class="row">
+          <ul class="breadcrumbs left">
+            <li><a href="index.html">Select a State</a></li>
+            <li class="current"><a href="#">Select a County Court in [NAME OF THE STATE]</a></li>
+          </ul>
+        </div>
 
-    <!-- Table -->
-    <div class="row container">
-      <div class="small-12 columns">
-        <table class="small-12 columns with-button">
-          <thead>
-            <tr>
-              <th>County Name</th>
-              <th>City</th>
-              <th>State</th>
-              <th>Zip Code</th>
-              <th>&nbsp;</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-            <tr>
-              <td>Alameda</td>
-              <td>Oakland</td>
-              <td>CA</td>
-              <td>94501</td>
-              <td>
-              <a href="county-detail.html" class="button tiny radius">See Details</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <!-- Table -->
+        <div class="row">
+          <div class="small-12 columns">
+            <table class="small-12 columns with-button">
+              <thead>
+                <tr>
+                  <th>County Name</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Zip Code</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+                <tr>
+                  <td>Alameda</td>
+                  <td>Oakland</td>
+                  <td>CA</td>
+                  <td>94501</td>
+                  <td>
+                  <a href="county-detail.html" class="button tiny radius">See Details</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Modal :: Members Area  -->
+        <div class="row">
+          <div id="loginModal" class="tiny reveal-modal" data-reveal>        
+            <h4 class="text-center heading-highlight">Members Area</h4>
+            <a class="close-reveal-modal">&#215;</a>
+            <form action="" class="small-10 small-centered columns">
+              <div class="row" style="margin-top:30px">
+                <label for="">
+                  Email
+                  <input type="text">
+                </label>
+                <label for="">
+                  Password
+                  <input type="text">
+                </label>
+              </div>
+              <div class="row">
+                <a href="#" data-reveal-id="passwordRecoverModal" class="right" style="margin-bottom:20px;">Forgot my Password</a>
+              </div>
+              <div class="row">
+                <input type="submit" name="" class="button green radius expand" value="Log In">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Modal :: Recover Password  -->
+        <div class="row">
+          <div id="passwordRecoverModal" class="tiny reveal-modal" data-reveal>        
+            <h4 class="text-center heading-highlight">We'll send you<br>a new password</h4>
+            <a class="close-reveal-modal">&#215;</a>
+            <form action="" class="small-10 small-centered columns">
+              <div class="row" style="margin-top:30px">
+                <label for="">
+                  Email
+                  <input type="text" placeholder="Type the e-mail you have registered">
+                </label>
+              </div>
+              <div class="row">
+                <input type="submit" name="" class="button green small radius expand" value="Log In" style="margin-top:0;">
+              </div>
+              <div class="row text-center">
+                <a href="#" data-reveal-id="loginModal" style="margin-top:20px;"><&nbsp;Back</a>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+
+      <!-- Footer -->
+      <footer class="second-nav">
+        <div class="row container">
+          <ul class="inline-list h-aligned">
+            <li><a href="#">National Database Coverage</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>            
+          </ul>
+        </div>
+      </footer>
     </div>
-
     <script src="js/vendor/libraries.min.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.min.js"></script>

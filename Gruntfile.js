@@ -43,9 +43,21 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd:'<%= app %>/',
-					src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**'],
+					src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**', '!pre-html/**'],
 					dest: '<%= dist %>/'
-				}]
+				},{
+          expand: true,
+          flatten: true,
+          src: ['<%= app %>/js/owl.carousel.min.js'],
+          dest: '<%= dist %>/js/',
+          filter: 'isFile'
+        },{
+          expand: true,
+          flatten: true,
+          src: ['<%= app %>/css/owl-carousel.css'],
+          dest: '<%= dist %>/css/',
+          filter: 'isFile'
+        }]
 			},
 		},
 
@@ -142,19 +154,27 @@ module.exports = function(grunt) {
 		      port: 21,
 		      authKey: 'key1'
 		    },
-		    src: '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/dist',
-		    dest: 'public_html/dotgridline/demo/county-docs',
-		    exclusions: ['/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/dist/.DS_Store', '/Users/dotgridline/Documents/_Work_/_site/countyDocs/site/dist/Thumbs.db', 'dist/tmp'],
+		    src: '/Users/dotgridline/Documents/_Work_/_site/crimDox/site/dist',
+		    dest: 'public_html/dotgridline/demo/crimdox',
+		    exclusions: ['/Users/dotgridline/Documents/_Work_/_site/crimDox/site/dist/.DS_Store', '/Users/dotgridline/Documents/_Work_/_site/crimDox/site/dist/Thumbs.db', 'dist/tmp'],
 		    simple: false,
 		    useList: false
 		  }
-		}
+		},
+
+    uncss: {
+      dist: {
+        files: {
+          '<%= dist %>/css/tidy.css': ['<%= app %>/*.html']
+        }
+      }
+    }
 		
 	});
 
 	
 	grunt.loadNpmTasks('grunt-sass');
-	
+
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
@@ -168,6 +188,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-ftpush');
+  grunt.loadNpmTasks('grunt-uncss');
 
 	
 	grunt.registerTask('compile-sass', ['sass']);
@@ -178,6 +199,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('server-dist', ['connect:dist']);
 
 	grunt.registerTask('upload', ['ftpush:build']);
+
+  grunt.registerTask('tidy', ['uncss']);
 
 	grunt.registerTask('compile', ['compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', '<newer:></newer:>imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 	
